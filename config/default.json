@@ -1,0 +1,45 @@
+{
+  "flags": {
+    "DEPRESSION": -18.5,
+    "ANXIETY": -18.5,
+    "SURGERY": -25,
+    "HEARTH": -30
+  },
+  "consumptions": {
+    "alcohol": [
+      {
+        "period": "weekly",
+        "qty": 10,
+        "score": -18.5
+      },
+      {
+        "period": "weekly",
+        "qty": 25,
+        "score": -30
+      }
+    ],
+    "tobacco": [
+      {
+        "period": "monthly",
+        "qty": 1,
+        "score": -25
+      }
+    ]
+  },
+  "grades": {
+    "bmi": [
+      {
+        "range": [null, 18.5],
+        "score": -15
+      },
+      {
+        "range": [30, null],
+        "score": -30
+      },
+      {
+        "range": [25, 29.999],
+        "score": -25
+      }
+    ]
+  }
+}

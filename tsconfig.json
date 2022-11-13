@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "es2016",
+    "module": "ES6",
+    "lib": [ "ES6" ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "baseUrl": ".",
+    //    "rootDir": "./src",
+    //"rootDirs": ["./src", "./types", "./tests"],
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "./types"
+    ],
+    "sourceMap": true,
+    "outDir": "./dist/",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noImplicitReturns": false,
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./src/*" ],
+      "@lib/*": ["./src/lib/*" ],
+      "types/*": [ "./types/*" ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "./types/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.test.json"
+    }
+  ]
+}

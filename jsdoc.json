@@ -1,0 +1,56 @@
+{
+  "source": {
+    "include": [
+      "src",
+      "types"
+    ],
+    "includePattern": "\\.(jsx|js|ts|tsx)$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "tags": {
+    "allowUnknownTags": ["optional", "link"]
+  },
+  "plugins": [
+    "plugins/markdown",
+    "node_modules/better-docs/typescript",
+    "node_modules/better-docs/category"
+  ],
+
+  "templates": {
+    "template": "node_modules/better-docs",
+    "cleverLinks": true,
+    "monospaceLinks": false,
+    "search": true,
+    "default": {
+      "staticFiles": {
+        "include": []
+      }
+    },
+    "better-docs": {
+      "name": "Sample Documentation",
+      "title": "HTML title",
+      "css": "style.css",
+      "hideGenerator": true,
+      "logo": "images/logo.png",
+      "navLinks": [
+        {
+          "label": "Github",
+          "href": "https://github.com/"
+        }
+      ]
+    }
+  },
+  "opts": {
+    "template": "node_modules/better-docs",
+    "tutorials": "docs/tutorials",
+    "encoding": "utf8",
+    "destination": "dist/docs/",
+    "readme": "README.md",
+    "recurse": true,
+    "verbose": true
+  },
+  "opts-2": {
+    "template": "templates/default",
+    "template2": "node_modules/better-docs"
+  }
+}

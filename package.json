@@ -1,0 +1,39 @@
+{
+  "name": "@coding/test",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.2.4",
+  "description": "code exercise",
+  "author": "Jean-Michel Girard <jean.m.girard@outlook.com>",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "clean": "npx rimraf -rf docs dist",
+    "read": "ts-node src/main.ts",
+    "test": "jest --colors",
+    "test:coverage": "yarn test --coverage",
+    "test:watch": "yarn test --watch --all --onlyChanged --onlyFailures",
+    "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
+    "lint:fix": "yarn lint --fix",
+    "docs": "yarn jsdoc && yarn typedoc",
+    "typedoc": "typedoc --entryPoints src/main.ts",
+    "jsdoc": "jsdoc -c jsdoc.json",
+    "build": "esbuild src/main.ts --bundle --minify --platform=node --sourcemap=external --outfile=dist/main.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.1",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "better-docs": "^2.7.2",
+    "esbuild": "^0.15.13",
+    "eslint": "^8.26.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "jest": "^29.2.2",
+    "jsdoc": "^4.0.0",
+    "taffydb": "^2.7.3",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.20",
+    "typescript": "^4.8.4"
+  }
+}

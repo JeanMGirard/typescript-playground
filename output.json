@@ -1,0 +1,44 @@
+[
+    {
+        "name": "jean",
+        "BMI": 28.09,
+        "score": -43.5,
+        "monthly premium": 0.55
+    },
+    {
+        "name": "sylvie",
+        "BMI": 31.63,
+        "score": -55,
+        "monthly premium": 0.25
+    },
+    {
+        "name": "robert",
+        "BMI": 19.59,
+        "score": -18.5,
+        "monthly premium": 0.3
+    },
+    {
+        "name": "nancy",
+        "BMI": 25.08,
+        "score": -25,
+        "monthly premium": 0.55
+    },
+    {
+        "name": "henry",
+        "BMI": 15.36,
+        "score": -33.5,
+        "monthly premium": 0.25
+    },
+    {
+        "name": "ali",
+        "BMI": 22.94,
+        "score": 0,
+        "monthly premium": 0.1
+    },
+    {
+        "name": "herve",
+        "BMI": 26.22,
+        "score": -43.5,
+        "monthly premium": 0.55
+    }
+]
